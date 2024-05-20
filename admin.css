@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+.admin_nav {
+    top: 0;
+    position: sticky;
+    background-color: rgb(34, 40, 49);
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.admin_img {
+    padding-left: 20px;
+}
+.admin_img i {
+    color: white;
+    float: left;
+    padding-top: 2px;
+}
+.admin_img i:hover{
+    scale: 1.2;
+    color: orange;
+}
+.admin_img p {
+    font-size: 20px;
+    font-weight: bolder;
+    float: right;
+    color: orange;
+    padding-left: 12px;
+}
+.admin_img p:hover{
+    color: white;
+    scale: 1.2;
+}
+.logo-admin {
+    font-size: 25px;
+    font-weight: bolder;
+    padding-right: 40px;
+    color: orange;
+}
+.logo-admin:hover {
+    color: white;
+}

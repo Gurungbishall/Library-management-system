@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.login_nav{
+    top: 0;
+    position: sticky;
+    background-color: rgb(34, 40, 49);
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-login {
+    font-size: 25px;
+    font-weight: bolder;
+    padding-left: 30px;
+    color: orange;
+}
+.logo-login:hover {
+    color: white;
+}
+.container-login {
+    height: 100vh;
+    background-color: rgb(0, 173, 181);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.screen-login{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 400px;
+    height: 400px;
+    background-color: orange;
+    box-shadow: 4px 4px wheat;
+    border-radius: 10px;
+}
+.login {
+    font-size: 40px;
+    font-weight: bolder;
+}
+.login_field {
+    padding-top: 20px;
+}
+.login_field i{
+    position: absolute;
+    padding-top: 10px;
+    padding-left: 5px;
+}
+input {
+    height: 40px;
+    width: 300px;
+    text-align: center;
+    border: 2px solid white;
+    outline: none;
+}
+input:active,
+input:hover {
+    border-bottom-color: black;
+}
+a {
+    height: 40px;
+    width: 300px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: aliceblue;
+    background-color: rgb(0, 103, 105);
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    padding-top: 10px;
+    text-decoration: none;
+}
+
+a:active,
+a:focus,
+a:hover {
+    color: black;
+    background-color: rgb(238, 238, 238);
+
+}
+a:hover {
+    color:black !important;
+}
+.forget {
+    font-size: 19px;
+}
+.forget:hover {
+    color: white;
+}
+.other {
+    display: flex;
+    gap: 30px;
+    padding-top: 10px;
+}
+.icon-1 {
+    color: white;
+}
+.icon-1:hover{
+    color: rgb(80,199,199);
+}
+.icon-2 {
+    color: white;
+}
+.icon-2:hover {
+    color: rgb(66,103,178);
+}
+.icon-3 {
+    color: white;
+}
+.icon-3:hover {
+    color: black;
+}

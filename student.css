@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+.student_nav {
+    top: 0;
+    position: sticky;
+    background-color: rgb(34, 40, 49);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding-left: 400px;
+}
+.logo-student {
+    font-size: 25px;
+    font-weight: bolder;
+    padding-right: 40px;
+    color: orange;
+}
+.logo-student:hover {
+    color: white;
+}
+input[type=text]{
+    width: 300px;
+    height: 35px;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 8px;
+    border: 2px solid black;
+    outline: none;
+}
+input[type=text]:hover,
+input[type=text]:active,
+input[type=text]:focus{
+   border-bottom-color: orange;
+}
