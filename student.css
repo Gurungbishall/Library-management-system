@@ -88,3 +88,14 @@ input[type=text]:focus{
     flex-direction: column; 
     border-radius: 8px;
 }
+.p_b:hover {
+    scale: 1.2;
+}
+.p_b i {
+    width: 100px;
+    text-align: center;
+    border-radius: 8px;
+}
+.p_b p {
+    padding-top: 20px;
+}
