@@ -5,66 +5,80 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
-.login_nav{
-    top: 0;
-    position: sticky;
-    background-color: rgb(34, 40, 49);
-    height: 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.logo-login {
-    font-size: 25px;
-    font-weight: bolder;
-    padding-left: 30px;
-    color: orange;
-}
-.logo-login:hover {
-    color: white;
-}
 .container-login {
     height: 100vh;
-    background-color: rgb(0, 173, 181);
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url(loginpic.png);
 }
-.screen-login{
-    padding: 40px;
+
+.container_1 {
+    width: 700px;
+    height: 430px;
+    border-radius: 10px;
+    background-color: rgb(83, 87, 99);
+    opacity: 0.85;
+}
+
+.welcome {
+    font-size: 40px;
+    text-align: center;
+    color: rgb(125, 255, 4);
+    float: left;
+    width: 295px;
+    height: 430px;
+    padding-top: 20%;
+}
+
+.screen-login {
+    float: right;
+    padding: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
     width: 400px;
-    height: 400px;
+    height: 430px;
     background-color: orange;
-    box-shadow: 4px 4px wheat;
-    border-radius: 10px;
+    border-radius: 0 10px 10px 0;
 }
-.login {
+
+.logo-login {
     font-size: 40px;
     font-weight: bolder;
+    color: black;
 }
-.login_field {
-    padding-top: 20px;
+
+.logo-login:hover {
+    color: white;
 }
-.login_field i{
+
+.login {
+    font-size: 33px;
+    font-weight: bolder;
+    padding-bottom: 15px;
+}
+
+.login_field i {
     position: absolute;
-    padding-top: 10px;
+    padding-top: 12px;
     padding-left: 5px;
 }
+
 input {
-    height: 40px;
+    height: 45px;
     width: 300px;
     text-align: center;
     border: 2px solid white;
     outline: none;
 }
+
 input:active,
 input:hover {
     border-bottom-color: black;
 }
+
 a {
     height: 40px;
     width: 300px;
@@ -76,6 +90,7 @@ a {
     border: none;
     text-align: center;
     padding-top: 10px;
+    margin-top: 8px;
     text-decoration: none;
 }
 
@@ -86,35 +101,45 @@ a:hover {
     background-color: rgb(238, 238, 238);
 
 }
+
 a:hover {
-    color:black !important;
+    color: black !important;
 }
+
 .forget {
     font-size: 19px;
 }
+
 .forget:hover {
     color: white;
 }
+
 .other {
     display: flex;
     gap: 30px;
     padding-top: 10px;
 }
+
 .icon-1 {
     color: white;
 }
-.icon-1:hover{
-    color: rgb(80,199,199);
+
+.icon-1:hover {
+    color: rgb(80, 199, 199);
 }
+
 .icon-2 {
     color: white;
 }
+
 .icon-2:hover {
-    color: rgb(66,103,178);
+    color: rgb(66, 103, 178);
 }
+
 .icon-3 {
     color: white;
 }
+
 .icon-3:hover {
     color: black;
 }
