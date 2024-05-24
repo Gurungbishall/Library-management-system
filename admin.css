@@ -14,7 +14,7 @@
     display: grid;
     border: 2px solid black;
     grid-template-columns: 300px 1620px;
-    grid-template-rows: 50px;
+    grid-template-rows: 70px;
     height: 100vh;
 
 }
@@ -32,17 +32,34 @@
     position: sticky;
     align-items: center;
     justify-content: space-between;
+    background-color: wheat;
 }
 
-.All {
+form {
+    margin-left: 10px;
+}
+
+form .All {
     height: 40px;
     width: 65px;
     border-radius: 14px 0px 0px 14px;
+    float: left;
+    border-right: none;
 }
 
 input[type=text] {
     height: 40px;
     width: 250px;
+    font-size: 20px;
+    float: left;
+    padding-left: 4px;
+}
+
+form .submit {
+    height: 40px;
+    width: 65px;
+    float: left;
+    border-left: none;
 }
 
 .Lang {
@@ -69,15 +86,43 @@ input[type=text] {
 .name {
     height: 40px;
     width: 100px;
+    margin-right: 20px;
 }
 
 .side_nav {
     grid-row: 1 / span 2;
     /* border: 2px solid brown; */
     width: 300px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.side_nav p {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: bolder;
+    color: aqua;
+
+}
+
+.side_nav > i {
+    font-size: 15px;
+}
+.side_nav>a {
+    height: 50px;
+    text-align: center;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
 }
 
 .inner_container {
     /* border: 2px solid red; */
     grid-column: 2;
+    background-color: rgb(0, 173, 181);
 }
