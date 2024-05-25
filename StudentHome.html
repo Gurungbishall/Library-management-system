@@ -1,122 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="StudentHome.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
-    <nav class="student_nav">
+    <link rel="stylesheet" href="admin.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="admin.js"></script>
+  </head>
+  <body>
+    <div class="outer_container">
+      <div class="container">
+        <nav class="top_nav">
+          <form class="search">
+            <div class="All">
+              <button class="All_btn">All</button>
+              <div id="search_option" class="search_option">
+                <a href="">Title</a>
+                <a href="">Author</a>
+                <a href="">Text</a>
+                <a href="">Subjects</a>
+              </div>
+            </div>
+            <input type="text" placeholder="Search...." />
+            <button class="submit"><i class="fa fa-search"></i></button>
+          </form>
+
+          <button class="Lang">Lang</button>
+
+          <div>Time</div>
+          <div class="logo">
+            <i class="fa-solid fa-user"></i>
+            <button class="name">Bishal</button>
+          </div>
+        </nav>
+
+        <nav class="side_nav">
+          <p>Library</p>
+          <a href=""><i class="fa-solid fa-house-user"></i> Home</a>
+          <a href=""><i class="fa fa-search"></i> Search</a>
+          <a href=""><i class="fa-solid fa-book"></i> My shelf</a>
+        </nav>
+
+        <div class="inner_container">
+          <div class="book">
+            <div class="top_book_nav">
+              <p>Recommeded for you</p>
+              <button>Show all</button>
+            </div>
+            <div class="list_of_book">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+
+          <div class="book">
+            <div class="top_book_nav">
+              <p>Recent  Readings</p>
+              <button>Show all</button>
+            </div>
+            <div class="list_of_book">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+
+          <div class="book">
+            <div class="top_book_nav">
+              <p>Academic Books</p>
+              <button>Show all</button>
+            </div>
+            <div class="list_of_book">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
         
-        <div class="side_nav">
-            <button>
-                <div>
-                    <a href="http://">Book</a>
-                    <a href="http://">Taken</a>
-                </div>
-            </button>
+          <div class="book">
+            <div class="top_book_nav">
+              <p>Jourals, Articles & Paper Publications</p>
+              <button>Show all</button>
+            </div>
+            <div class="list_of_book">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
 
         </div>
-        <div class="logo-student">
-         <i class="fa-solid fa-book"></i>
-         Library
-        </div>
-
-         <form class="search">
-             <input type="text" placeholder=" search..">
-             <button type="submit"><i class="fa fa-search"></i></button>
-         </form>
-     </nav>
-     
-     <section class="container">
-       <div class="book">
-        <p class="p">Popular Book:</p>
-        <div class="popular_book" id="popular_book">
-            <div class="p_b">
-            <div class="p_b1">
-                <i class="fa-solid fa-book fa-6x"  style="color: red;"></i>
-            </div>
-             <p>Bishal Gurung</p>
-            </div>
-            <div class="p_b">
-            <div class="p_b2"><i class="fa-solid fa-book fa-6x"></i>
-            </div>
-            <p>Sachet</p>
-            </div>
-            <div class="p_b">
-           <div class="p_b3">
-                <i class="fa-solid fa-book fa-6x"></i>
-           </div>
-            <p>Binit</p>
-            </div>
-            <div class="p_b">
-            <div class="p_b4">
-                <i class="fa-solid fa-book fa-6x"></i>
-            </div>
-            <p>Kritik</p>
-            </div>
-        </div>
-       </div>
-
-       <div class="book">
-        <p class="p">Latest Books:</p>
-        <div class="popular_book" id="popular_book">
-            <div class="p_b">
-            <div class="p_b1">
-                <i class="fa-solid fa-book fa-6x"  style="color: red;"></i>
-            </div>
-             <p>Bishal Gurung</p>
-            </div>
-            <div class="p_b">
-            <div class="p_b2"><i class="fa-solid fa-book fa-6x"></i>
-            </div>
-            <p>Sachet</p>
-            </div>
-            <div class="p_b">
-           <div class="p_b3">
-                <i class="fa-solid fa-book fa-6x"></i>
-           </div>
-            <p>Binit</p>
-            </div>
-            <div class="p_b">
-            <div class="p_b4">
-                <i class="fa-solid fa-book fa-6x"></i>
-            </div>
-            <p>Kritik</p>
-            </div>
-        </div>
-       </div>
-       
-       <div class="book">
-        <p class="p">Fifth Semester Books:</p>
-        <div class="popular_book" id="popular_book">
-            <div class="p_b">
-            <div class="p_b1">
-                <i class="fa-solid fa-book fa-6x"  style="color: red;"></i>
-            </div>
-             <p>DAA</p>
-            </div>
-            <div class="p_b">
-            <div class="p_b2"><i class="fa-solid fa-book fa-6x"></i>
-            </div>
-            <p>Cryptography</p>
-            </div>
-            <div class="p_b">
-           <div class="p_b3">
-                <i class="fa-solid fa-book fa-6x"></i>
-           </div>
-            <p>Web technology</p>
-            </div>
-            <div class="p_b">
-            <div class="p_b4">
-                <i class="fa-solid fa-book fa-6x"></i>
-            </div>
-            <p>SAD</p>
-            </div>
-        </div>
-       </div>
-     </section>
-</body>
+      </div>
+    </div>
+  </body>
 </html>

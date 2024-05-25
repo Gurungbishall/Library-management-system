@@ -31,9 +31,10 @@
     position: sticky;
     align-items: center;
     justify-content: space-between;
-    background-color: rgb(96, 113, 114);
+    background-color: rgb(255, 0, 0);
     top: 0;
     z-index: 1;
+    border-bottom: 1px solid black;
 }
 
 form {
@@ -111,8 +112,9 @@ form .submit {
 
 .side_nav {
     grid-row: 1 / span 2;
+    height: 100%;
     width: 300px;
-    background-color: white;
+    background-color: rgb(255, 232, 197);
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -129,7 +131,7 @@ form .submit {
     justify-content: center;
     font-size: 40px;
     font-weight: bolder;
-    color: aqua;
+    color: black;
 
 }
 
@@ -147,33 +149,6 @@ form .submit {
 
 .inner_container {
     grid-column: 2;
-    background-color: rgb(96, 113, 114);
+    background-color:rgb(255, 162, 127);
 }
 
-.book {
-    margin-top: 40px;
-}
-
-.top_book_nav {
-    display: flex;
-    justify-content: space-between;
-    font-size: 30px;
-}
-
-.top_book_nav  {
-    padding-right: 10px;
-    padding-left: 40px;
-}
-
-.list_of_book {
-    display: flex;
-    gap: 40px;
-    padding-top: 10px;
-    padding-left: 40px;
-}
-
-.list_of_book>div {
-    border: 2px solid black;
-    height: 180px;
-    width: 150px;
-}
