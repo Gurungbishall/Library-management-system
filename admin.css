@@ -5,6 +5,7 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
+
 .outer_container {
     height: 100vh;
     width: 100%;
@@ -12,7 +13,6 @@
 
 .container {
     display: grid;
-    border: 2px solid black;
     grid-template-columns: 300px 1620px;
     grid-template-rows: 70px;
     height: 100vh;
@@ -28,22 +28,42 @@
 .top_nav {
     display: flex;
     grid-column: 2;
-    /* border: 2px solid orange; */
     position: sticky;
     align-items: center;
     justify-content: space-between;
-    background-color: wheat;
+    background-color: rgb(96, 113, 114);
+    top: 0;
+    z-index: 1;
 }
 
 form {
     margin-left: 10px;
 }
 
-form .All {
+.All {
+    position: relative;
+    float: left;
+    padding-left: 30px;
+}
+
+.search_option {
+    display: none;
+    position: absolute;
+    background-color: red;
+    color: white;
+    overflow: auto;
+    z-index: 1;
+}
+
+.search_option a {
+    text-decoration: none;
+    display: block;
+}
+
+form .All_btn {
     height: 40px;
     width: 65px;
     border-radius: 14px 0px 0px 14px;
-    float: left;
     border-right: none;
 }
 
@@ -51,15 +71,15 @@ input[type=text] {
     height: 40px;
     width: 250px;
     font-size: 20px;
-    float: left;
     padding-left: 4px;
+    float: left;
 }
 
 form .submit {
     height: 40px;
     width: 65px;
-    float: left;
     border-left: none;
+    float: left;
 }
 
 .Lang {
@@ -91,12 +111,15 @@ form .submit {
 
 .side_nav {
     grid-row: 1 / span 2;
-    /* border: 2px solid brown; */
     width: 300px;
     background-color: white;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    position: fixed;
+    left: 0;
+    overflow: hidden;
+    z-index: 1;
 }
 
 .side_nav p {
@@ -110,9 +133,10 @@ form .submit {
 
 }
 
-.side_nav > i {
+.side_nav>i {
     font-size: 15px;
 }
+
 .side_nav>a {
     height: 50px;
     text-align: center;
@@ -122,7 +146,34 @@ form .submit {
 }
 
 .inner_container {
-    /* border: 2px solid red; */
     grid-column: 2;
-    background-color: rgb(0, 173, 181);
+    background-color: rgb(96, 113, 114);
+}
+
+.book {
+    margin-top: 40px;
+}
+
+.top_book_nav {
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+}
+
+.top_book_nav  {
+    padding-right: 10px;
+    padding-left: 40px;
+}
+
+.list_of_book {
+    display: flex;
+    gap: 40px;
+    padding-top: 10px;
+    padding-left: 40px;
+}
+
+.list_of_book>div {
+    border: 2px solid black;
+    height: 180px;
+    width: 150px;
 }
