@@ -12,35 +12,34 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <script src="admin.js"></script>
   </head>
   <body>
     <div class="outer_container">
       <div class="container">
         <nav class="top_nav">
-          <form class="search">
-            <div class="All">
-              <button class="All_btn">All</button>
-              <div id="search_option" class="search_option">
-                <a href="">Title</a>
-                <a href="">Author</a>
-                <a href="">Text</a>
-                <a href="">Subjects</a>
-              </div>
+          <div class="search">
+            <button class="All_btn" id="btn">All</button>
+            <div id="search_option" class="search_option">
+              <a href="">Title</a>
+              <a href="">Author</a>
+              <a href="">Text</a>
+              <a href="">Subjects</a>
             </div>
-            <input type="text" placeholder="Search...." />
-            <button class="submit"><i class="fa fa-search"></i></button>
-          </form>
-
+            <form id="form">
+              <input type="text" placeholder="Search...." />
+            </form>
+            <button class="submit" id="formsubmit"><i class="fa fa-search"></i></button>
+          </div>
+          
           <button class="Lang">Lang</button>
-
+          
           <div>Time</div>
           <div class="logo">
             <i class="fa-solid fa-user"></i>
             <button class="name">Bishal</button>
           </div>
         </nav>
-
+        
         <nav class="side_nav">
           <p>Library</p>
           <a href=""><i class="fa-solid fa-house-user"></i> Dashbord</a>
@@ -48,13 +47,14 @@
           <a href=""><i class="fa-solid fa-book"></i> Cataloging</a>
           <a href=""><i class="fa-solid fa-users"></i>Members</a>
         </nav>
-
+        
         <div class="inner_container">
           
-          </div>
-
         </div>
+        
       </div>
     </div>
-  </body>
+  </div>
+</body>
+<script src="index.js"></script>
 </html>

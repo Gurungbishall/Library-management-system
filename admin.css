@@ -31,56 +31,70 @@
     position: sticky;
     align-items: center;
     justify-content: space-between;
-    background-color: rgb(255, 0, 0);
+    background-color: rgba(211, 208, 208, 0.479);
     top: 0;
     z-index: 1;
-    border-bottom: 1px solid black;
 }
 
-form {
-    margin-left: 10px;
+.search {
+    display: flex;
+    padding-left: 40px;
 }
 
-.All {
-    position: relative;
+.search button {
     float: left;
-    padding-left: 30px;
+    width: 50px;
 }
 
 .search_option {
-    display: none;
+    top: 3rem;
     position: absolute;
-    background-color: red;
-    color: white;
+    display: grid;
+    gap: 3px;
+    width: 9rem;
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 6%;
     overflow: auto;
     z-index: 1;
+    opacity: 0;
+    background: white;
+    box-shadow: 2px 2px 10px gray;
+    height: fit-content;
+    transition: all .3s ease-in-out;
 }
 
 .search_option a {
     text-decoration: none;
-    display: block;
+    color: black;
+}
+.active {
+    opacity: 100%;
 }
 
-form .All_btn {
+.All_btn {
     height: 40px;
     width: 65px;
     border-radius: 14px 0px 0px 14px;
     border-right: none;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 input[type=text] {
     height: 40px;
     width: 250px;
     font-size: 20px;
-    padding-left: 4px;
     float: left;
+    padding-left: 5px;
 }
 
-form .submit {
+.submit {
     height: 40px;
     width: 65px;
-    border-left: none;
     float: left;
+    border-left: none;
+    border-radius: 0px 14px 14px 0px;
 }
 
 .Lang {
@@ -114,7 +128,7 @@ form .submit {
     grid-row: 1 / span 2;
     height: 100%;
     width: 300px;
-    background-color: rgb(255, 232, 197);
+    background-color: white;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -149,6 +163,5 @@ form .submit {
 
 .inner_container {
     grid-column: 2;
-    background-color:rgb(255, 162, 127);
+    background-color: rgba(211, 208, 208, 0.479);
 }
-
