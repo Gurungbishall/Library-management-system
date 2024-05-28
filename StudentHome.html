@@ -15,108 +15,133 @@
     <script src="admin.js"></script>
   </head>
   <body>
-    <div class="outer_container">
-      <div class="container">
-        <nav class="top_nav">
-          <div class="search">
-            <button class="All_btn" id="btn">All</button>
-            <div id="search_option" class="search_option">
-              <a href="">Title</a>
-              <a href="">Author</a>
-              <a href="">Text</a>
-              <a href="">Subjects</a>
-            </div>
-            <form id="form">
-              <input type="text" placeholder="Search...." />
-            </form>
-            <button class="submit" id="formsubmit"><i class="fa fa-search"></i></button>
+    <div class="left_container">
+      <nav class="side_nav">
+        <div class="side_nav_header">Library</div>
+        <div>
+          <ul>
+            <li>
+              <a href=""
+                ><i class="fa-solid fa-house-user"></i>
+                <p>Home</p></a
+              >
+            </li>
+            <li>  
+              <a href=""
+                ><i class="fa fa-search"></i>
+                <p>Search</p></a
+              >
+            </li>
+            <li>
+              <a href=""
+                ><i class="fa-solid fa-book"></i>
+                <p>My shelf</p></a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="right_container">
+      <nav class="top_nav">
+        <div class="search">
+          <button class="All_btn" id="btn">
+            All<i class="fa-solid fa-caret-down"></i>
+          </button>
+          <div id="search_option" class="search_option">
+            <a href="">ALL</a>
+            <a href="">Title</a>
+            <a href="">Author</a>
+            <a href="">Text</a>
+            <a href="">Subjects</a>
           </div>
+          <form id="form">
+            <input type="text" placeholder="Search...." />
+          </form>
+          <button class="submit" id="formsubmit">
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
 
-          <button class="Lang">Lang</button>
+        <button class="Lang">Lang<i class="fa-solid fa-caret-down"></i></button>
 
-          <div>Time</div>
-          <div class="logo">
-            <i class="fa-solid fa-user"></i>
-            <button class="name">Bishal</button>
+        <div>Time</div>
+
+        <button class="user">
+          <i class="fa-solid fa-user"></i>
+          Bishal
+          <i class="fa-solid fa-caret-down"></i>
+        </button>
+      </nav>
+
+      <div class="inner_container">
+        <div class="book">
+          <div class="top_book_nav">
+            <p>Recommeded for you</p>
+            <button>Show all</button>
           </div>
-        </nav>
-
-        <nav class="side_nav">
-          <p>Library</p>
-          <a href=""><i class="fa-solid fa-house-user"></i> Home</a>
-          <a href=""><i class="fa fa-search"></i> Search</a>
-          <a href=""><i class="fa-solid fa-book"></i> My shelf</a>
-        </nav>
-
-        <div class="inner_container">
-          <div class="book">
-            <div class="top_book_nav">
-              <p>Recommeded for you</p>
-              <button>Show all</button>
-            </div>
-            <div class="list_of_book">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
+          <div class="list_of_book">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
           </div>
+        </div>
 
-          <div class="book">
-            <div class="top_book_nav">
-              <p>Recent  Readings</p>
-              <button>Show all</button>
-            </div>
-            <div class="list_of_book">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
+        <div class="book">
+          <div class="top_book_nav">
+            <p>Recent Readings</p>
+            <button>Show all</button>
           </div>
+          <div class="list_of_book">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
 
-          <div class="book">
-            <div class="top_book_nav">
-              <p>Academic Books</p>
-              <button>Show all</button>
-            </div>
-            <div class="list_of_book">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
+        <div class="book">
+          <div class="top_book_nav">
+            <p>Academic Books</p>
+            <button>Show all</button>
           </div>
-        
-          <div class="book">
-            <div class="top_book_nav">
-              <p>Jourals, Articles & Paper Publications</p>
-              <button>Show all</button>
-            </div>
-            <div class="list_of_book">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
+          <div class="list_of_book">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
           </div>
+        </div>
 
+        <div class="book">
+          <div class="top_book_nav">
+            <p>Jourals, Articles & Paper Publications</p>
+            <button>Show all</button>
+          </div>
+          <div class="list_of_book">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
         </div>
       </div>
     </div>

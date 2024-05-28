@@ -14,47 +14,73 @@
     />
   </head>
   <body>
-    <div class="outer_container">
-      <div class="container">
-        <nav class="top_nav">
-          <div class="search">
-            <button class="All_btn" id="btn">All</button>
-            <div id="search_option" class="search_option">
-              <a href="">Title</a>
-              <a href="">Author</a>
-              <a href="">Text</a>
-              <a href="">Subjects</a>
-            </div>
-            <form id="form">
-              <input type="text" placeholder="Search...." />
-            </form>
-            <button class="submit" id="formsubmit"><i class="fa fa-search"></i></button>
-          </div>
-          
-          <button class="Lang">Lang</button>
-          
-          <div>Time</div>
-          <div class="logo">
-            <i class="fa-solid fa-user"></i>
-            <button class="name">Bishal</button>
-          </div>
-        </nav>
-        
-        <nav class="side_nav">
-          <p>Library</p>
-          <a href=""><i class="fa-solid fa-house-user"></i> Dashbord</a>
-          <a href=""><i class="fa-solid fa-arrows-rotate"></i> Library loan</a>
-          <a href=""><i class="fa-solid fa-book"></i> Cataloging</a>
-          <a href=""><i class="fa-solid fa-users"></i>Members</a>
-        </nav>
-        
-        <div class="inner_container">
-          
+    <div class="left_container">
+      <nav class="side_nav">
+        <div class="side_nav_header">Library</div>
+        <div>
+          <ul>
+            <li>
+              <a href=""
+                ><i class="fa-solid fa-house-user"></i>
+                <p>Dashbord</p></a
+              >
+            </li>
+            <li>
+              <a href=""
+                ><i class="fa-solid fa-arrows-rotate"></i>
+                <p>Library loan</p></a
+              >
+            </li>
+            <li>
+              <a href=""
+                ><i class="fa-solid fa-book"></i>
+                <p>Cataloging</p>
+              </a>
+            </li>
+            <li>
+              <a href=""
+                ><i class="fa-solid fa-users"></i>
+                <p>Members</p></a
+              >
+            </li>
+          </ul>
         </div>
-        
-      </div>
+      </nav>
     </div>
-  </div>
-</body>
-<script src="index.js"></script>
+    
+    <div class="right_container">
+      <nav class="top_nav">
+        <div class="search">
+          <button class="All_btn" id="btn">
+            All<i class="fa-solid fa-caret-down"></i>
+          </button>
+          <div id="search_option" class="search_option">
+            <a href="">All</a>
+            <a href="">Title</a>
+            <a href="">Author</a>
+            <a href="">Text</a>
+            <a href="">Subjects</a>
+          </div>
+          <form id="form">
+            <input type="text" placeholder="Search...." />
+          </form>
+          <button class="submit" id="formsubmit">
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+
+        <button class="Lang">Lang<i class="fa-solid fa-caret-down"></i></button>
+
+        <div>Time</div>
+
+        <button class="user">
+          <i class="fa-solid fa-user"></i>
+          Bishal
+          <i class="fa-solid fa-caret-down"></i>
+        </button>
+      </nav>
+      <div class="inner_container"></div>
+    </div>
+  </body>
+  <script src="index.js"></script>
 </html>
