@@ -140,6 +140,25 @@ input[type=text] {
     padding-left: 8px;
 }
 
+.time_date {
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    gap: 40px;
+    height: 40px;
+    width: 300px;
+    color: red;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+    border-radius: 8px;
+}
+
+.time_date div{
+    display: flex;
+    gap: 7px;
+
+}
 .user {
     height: 40px;
     width: 100px;
@@ -149,6 +168,26 @@ input[type=text] {
 
 .user i {
     padding: 6px;
+}
+
+.user_option {
+    display: none;
+    top: 3rem;
+    position: absolute;
+    overflow: auto;
+    width: 6rem;
+    text-align: left;
+    margin-top: 5px;
+    padding: 5px;
+    font-size: 15px;
+    background: white;
+    border-radius: 6%;
+    transition: all .3s ease-in-out;
+}
+
+.user_option a {
+    text-decoration: none;
+    color: black;
 }
 
 .inner_container {

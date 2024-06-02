@@ -26,7 +26,7 @@
                 <p>Home</p></a
               >
             </li>
-            <li>  
+            <li>
               <a href=""
                 ><i class="fa fa-search"></i>
                 <p>Search</p></a
@@ -50,7 +50,7 @@
             All<i class="fa-solid fa-caret-down"></i>
           </button>
           <div id="search_option" class="search_option">
-            <a href="">ALL</a>
+            <a href="">All</a>
             <a href="">Title</a>
             <a href="">Author</a>
             <a href="">Text</a>
@@ -66,12 +66,27 @@
 
         <button class="Lang">Lang<i class="fa-solid fa-caret-down"></i></button>
 
-        <div>Time</div>
+        <div class="time_date">
+          <div>
+            <i class="fa-regular fa-clock"></i>
+            <div id="time"></div>
+          </div>
+          <div>
+            <i class="fa-regular fa-calendar-days"></i>
+            <div id="date"></div>
+          </div>
+        </div>
 
-        <button class="user">
+        <button class="user" id="user">
           <i class="fa-solid fa-user"></i>
           Bishal
           <i class="fa-solid fa-caret-down"></i>
+          <div class="user_option" id="user_option">
+            <a href="">Profile</a>
+            <a href="">Favourite</a>
+            <a href="">Payments</a>
+            <a href="">Logout</a>
+          </div>
         </button>
       </nav>
 
@@ -146,4 +161,5 @@
       </div>
     </div>
   </body>
+  <script src="studenthome.js"></script>
 </html>
