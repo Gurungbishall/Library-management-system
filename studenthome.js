@@ -49,3 +49,17 @@ setInterval(() => {
 
   document.getElementById("date").innerHTML = `${days}-${months}-${years}AD`;
 }, 1000);
+
+
+//student_search//
+
+const Browse = document.getElementById("Browse");
+
+Browse.addEventListener("click", () => {
+  const Browse_option = document.getElementById("Browse_option");
+  if(Browse_option.style.display == "none"){
+    Browse_option.style.cssText = "display: block;";
+  }else{
+    Browse_option.style.cssText = "display: none";
+  }
+})
