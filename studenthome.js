@@ -47,7 +47,7 @@ setInterval(() => {
 
   months = months + 1;
 
-  document.getElementById("date").innerHTML = `${days}-${months}-${years}AD`;
+  document.getElementById("date").innerHTML = `${days}-${months}-${years} AD`;
 }, 1000);
 
 

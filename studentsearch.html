@@ -48,7 +48,7 @@
           <button class="All_btn" id="btn">
             All<i class="fa-solid fa-caret-down"></i>
           </button>
-          <div id="search_option" class="search_option">
+          <div id="search_option" class="search_option" style="display: none">
             <a href="">All</a>
             <a href="">Title</a>
             <a href="">Author</a>
@@ -80,7 +80,7 @@
           <i class="fa-solid fa-user"></i>
           Bishal
           <i class="fa-solid fa-caret-down"></i>
-          <div class="user_option" id="user_option">
+          <div class="user_option" id="user_option" style="display: none">
             <a href="">Profile</a>
             <a href="">Favourite</a>
             <a href="">Payments</a>
@@ -89,17 +89,33 @@
         </button>
       </nav>
 
-      <div class="Browse">
-        <button id="Browse">Browse</button>
-      <div id="Browse_option">
-        <ul>
-          <li>Bsc.CSIT</li>
-          <li>BCA</li>
-          <li>Manager</li>
-        </ul>
-      </div>
-    </div>
       <div class="inner_container">
+        <div class="Browse">
+          <button id="Browse">
+            Browse <i class="fa-solid fa-caret-down"></i>
+          </button>
+          <div id="Browse_option" style="display: none">
+            <ul>
+              <li>Bsc.CSIT</li>
+              <li>BCA</li>
+              <li>Manager</li>
+            </ul>
+          </div>
+        </div>
+          
+        <div class="books">
+          <div class="books_headers">
+            <p class="books_header_1">Title</p>
+            <p class="books_header_2">Ratings</p>
+            <p class="books_header_3">Category</p>
+            <p class="books_header_4">Availability</p>
+            <p class="books_header_5">Status</p>
+          </div>
+          <div class="book1"></div>
+          <div class="book2"></div>
+          <div class="book3"></div>
+          <div class="book4"></div>
+        </div>
       </div>
     </div>
   </body>
